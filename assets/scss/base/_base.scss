@@ -1,0 +1,38 @@
+.lato-font {
+  font-family: "Lato", sans-serif;
+}
+
+.noto-serif-tc {
+  font-family: "Noto Serif TC", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  font-optical-sizing: auto;
+}
+
+// bootstrap 預設是有需要時在套用 img-fluid
+// 看開發習慣也可以直接加上以下這一段
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.1em;
+}
+
+p {
+  letter-spacing: 0.05em;
+}
