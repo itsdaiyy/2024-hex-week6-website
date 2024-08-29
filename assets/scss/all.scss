@@ -7,7 +7,7 @@
 @import "./vendors-extensions/variables"; // 覆寫的自定義 bootstrap 變數
 @import "../../node_modules/bootstrap";
 
-@import "./vendors-extensions/utilities"; // 擴充 bootstrap 樣式
+@import "./vendors-extensions/bootstrap-utilities"; // 擴充 bootstrap 樣式
 
 @import "bootstrap/scss/utilities/api";
 
@@ -15,6 +15,10 @@
 
 // 自定義基本樣式
 @import "./base/base";
+
+// layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
 // components
 @import "./components/buttons";
@@ -25,9 +29,8 @@
 @import "./components/list-group";
 @import "./components/member-only";
 
-// layout
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
-
 // pages
 @import "./pages/index.scss";
+
+// 自定義共用樣式
+@import "./base/utilities";

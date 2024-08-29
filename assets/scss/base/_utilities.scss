@@ -1,30 +1,4 @@
-$utilities: map-merge(
-  $utilities,
-  (
-    "font-size":
-      map-merge(
-        map-get($utilities, "font-size"),
-        (
-          responsive: true,
-        )
-      ),
-    "font-weight":
-      map-merge(
-        map-get($utilities, "font-weight"),
-        (
-          responsive: true,
-        )
-      ),
-    "rounded":
-      map-merge(
-        map-get($utilities, "rounded"),
-        (
-          responsive: true,
-        )
-      ),
-  )
-);
-
+// border
 .border-radius-left-lg {
   border-top-left-radius: 1.25rem;
   border-bottom-left-radius: 1.25rem;
@@ -35,22 +9,32 @@ $utilities: map-merge(
   border-bottom-right-radius: 1.25rem;
 }
 
+@include media-breakpoint-up(sm) {
+  .border-sm-primary-300 {
+    border: 1px solid $primary-300;
+  }
+}
+
+// list style
 .line-list-style {
   li::marker {
     content: "｜";
   }
 }
 
+// background
 .bg-image-center {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+// 特殊 spacer
 .mt-neg-15 {
   margin-top: -4rem;
 }
 
+// letter spacing
 .letter-spacing-1 {
   letter-spacing: 0.1em;
 }
@@ -66,11 +50,5 @@ $utilities: map-merge(
 
   .letter-spacing-lg-2 {
     letter-spacing: 0.05em;
-  }
-}
-
-@include media-breakpoint-up(sm) {
-  .border-sm-primary-300 {
-    border: 1px solid $primary-300;
   }
 }
