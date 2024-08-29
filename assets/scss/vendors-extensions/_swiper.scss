@@ -1,0 +1,31 @@
+// swiper base style
+
+.swiper-slide {
+  height: auto !important;
+}
+
+.swiper-pagination {
+  --swiper-pagination-fraction-color: #{$neutral-400};
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-navigation-size: auto;
+  --swiper-navigation-color: #{$neutral-400};
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "" !important;
+}
+
+.swiper-button-line {
+  width: 80px;
+  height: 1px;
+  background-color: $neutral-400;
+}
+
+.style-project-swiper {
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <%- include('./layout/head'); %>
+
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); %>
+
+    <!-- banner -->
+    <section class="mb-12 mb-lg-16">
+      <div class="container px-0">
+        <picture>
+          <source
+            media="(min-width: 576px)"
+            srcset="../assets/images/article-banner.png"
+          />
+          <img
+            src="../assets/images/article-banner-sm.png"
+            alt="article banner"
+            class="w-100"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <main>
+      <!-- 文章內容 -->
+      <%- include('./layout/article-content'); %>
+
+      <!-- 延伸閱讀 -->
+      <%- include('./layout/article-read-more'); %>
+    </main>
+
+    <!-- footer -->
+    <%- include('./layout/footer'); %>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

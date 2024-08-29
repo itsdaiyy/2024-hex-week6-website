@@ -1,0 +1,19 @@
+.banner {
+  &__img {
+    height: calc(100vh - 66px);
+  }
+  &__title {
+    bottom: 0;
+    text-align: center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__title {
+      left: 0;
+      top: 50%;
+      bottom: auto;
+      text-align: start;
+      transform: translateY(-50%);
+    }
+  }
+}

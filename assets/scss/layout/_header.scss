@@ -1,4 +1,3 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar-nav {
+  --#{$prefix}nav-link-padding-x: 0.75rem;
 }

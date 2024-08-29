@@ -1,0 +1,17 @@
+.badge-primary-300 {
+  --#{$prefix}badge-color: #{$primary-400};
+  background-color: $primary-300;
+  line-height: 19.2px;
+}
+
+// .hashtag {
+//   padding: 4px 8px;
+//   background-color: $primary-300;
+//   line-height: 1.2;
+//   border-radius: 4px;
+//   align-content: center;
+// }
+
+.breadcrumb {
+  color: $neutral-400;
+}

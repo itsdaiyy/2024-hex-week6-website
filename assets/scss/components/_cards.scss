@@ -1,0 +1,91 @@
+.theme-card {
+  border-radius: 20px 0 20px 0;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(#212529, 0.4);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+.hover-card-img-opacity {
+  img {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+  &:hover img {
+    opacity: 0.7;
+  }
+}
+
+// 生活提案卡片
+
+.style-project-card {
+  aspect-ratio: 1.29661 / 1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card-left-top-tags {
+  // 定位
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1rem;
+  transform: translateY(-50%);
+
+  // 結構
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+
+  // 樣式
+  color: $accent-300;
+  font-size: 1rem;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.1em;
+  background-color: $white;
+}
+
+.card-bottom-linear-link {
+  // 結構
+  padding: 0.75rem 0.75rem 1rem 0.75rem;
+  display: flex;
+  justify-content: space-between;
+
+  // 樣式
+  color: $white;
+  font-weight: 700;
+  background-image: linear-gradient(
+    rgba($neutral-600, 0.05),
+    rgba($neutral-600, 1)
+  );
+  transition: color 300ms;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
+
+  // 狀態
+  &:hover {
+    color: $neutral-200;
+  }
+
+  &:active {
+    background-image: linear-gradient(
+      rgba($neutral-600, 0.2),
+      rgba($neutral-600, 1)
+    );
+  }
+}

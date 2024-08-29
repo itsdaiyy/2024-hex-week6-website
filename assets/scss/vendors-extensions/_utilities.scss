@@ -1,0 +1,76 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+    "font-weight":
+      map-merge(
+        map-get($utilities, "font-weight"),
+        (
+          responsive: true,
+        )
+      ),
+    "rounded":
+      map-merge(
+        map-get($utilities, "rounded"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+.border-radius-left-lg {
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+}
+
+.border-radius-right-lg {
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+}
+
+.line-list-style {
+  li::marker {
+    content: "｜";
+  }
+}
+
+.bg-image-center {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mt-neg-15 {
+  margin-top: -4rem;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 0.1em;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 0.05em;
+}
+
+@include media-breakpoint-up(lg) {
+  .letter-spacing-lg-1 {
+    letter-spacing: 0.1em;
+  }
+
+  .letter-spacing-lg-2 {
+    letter-spacing: 0.05em;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .border-sm-primary-300 {
+    border: 1px solid $primary-300;
+  }
+}

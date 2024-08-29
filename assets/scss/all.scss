@@ -1,14 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap");
+// 字體 & icon
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap");
 
+// bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
-@import "./utils/variables";
+@import "./vendors-extensions/variables"; // 覆寫的自定義 bootstrap 變數
 @import "../../node_modules/bootstrap";
 
-@import "./utils/utilities";
+@import "./vendors-extensions/utilities"; // 擴充 bootstrap 樣式
 
 @import "bootstrap/scss/utilities/api";
 
+@import "./vendors-extensions/swiper";
+
+// 自定義基本樣式
+@import "./base/base";
+
+// components
+@import "./components/buttons";
+@import "./components/forms";
+@import "./components/cards";
+@import "./components/badges";
+@import "./components/banner";
+@import "./components/list-group";
+@import "./components/member-only";
+
+// layout
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
+// pages
 @import "./pages/index.scss";

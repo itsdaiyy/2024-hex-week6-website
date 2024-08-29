@@ -1,15 +1,7 @@
-.lato-font {
-  font-family: "Lato", sans-serif;
-}
-
-.noto-serif-tc {
-  font-family: "Noto Serif TC", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
 body {
   font-optical-sizing: auto;
+  letter-spacing: 0.05em;
+  font-style: normal;
 }
 
 // bootstrap 預設是有需要時在套用 img-fluid
@@ -19,9 +11,13 @@ img {
   height: auto;
 }
 
+picture {
+  height: fit-content;
+}
+
 a {
-  color: inherit;
   display: inline-block;
+  text-decoration: none;
 }
 
 h1,
@@ -34,5 +30,53 @@ h6 {
 }
 
 p {
+  // letter-spacing: 0.05em;
+}
+
+input::placeholder {
   letter-spacing: 0.05em;
+}
+
+ol,
+ul,
+dl {
+  margin-bottom: 0;
+}
+
+// fonts
+.noto-serif-tc {
+  font-family: "Noto Serif TC", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.newsreader {
+  font-family: "Newsreader", serif;
+  font-style: normal;
+}
+
+@include media-breakpoint-up(sm) {
+  .border-lg-bottom {
+    border-bottom: 1px solid $neutral-300;
+  }
+}
+
+svg.bi {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentcolor;
+}
+
+.line {
+  display: inline-block;
+  flex-grow: 1;
+  height: 1px;
+  background-color: $neutral-200;
+}
+
+.debug,
+.debug * {
+  outline: 1px solid lightseagreen !important;
 }

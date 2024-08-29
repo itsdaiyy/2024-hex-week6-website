@@ -1,0 +1,47 @@
+.btn {
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+.btn-secondary-200 {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #{$accent-300};
+  --bs-btn-active-color: var(--bs-white);
+  --bs-btn-active-bg: #{shade-color($accent-300, 20%)};
+
+  &.disabled {
+    color: $white;
+    background-color: $neutral-200;
+  }
+}
+
+.btn-gray-100 {
+  --bs-btn-color: #{$neutral-400};
+  --bs-btn-hover-color: #{$neutral-500};
+  --bs-btn-hover-bg: #{$neutral-200};
+  --bs-btn-active-color: #{$neutral-600};
+
+  &.disabled {
+    color: $neutral-300;
+    background-color: $neutral-100;
+  }
+}
+
+.btn-text {
+  color: $accent-200;
+  font-weight: 700;
+  border-radius: 0px;
+
+  &:hover {
+    color: $accent-300;
+  }
+
+  &:active {
+    color: $neutral-600;
+  }
+
+  &.disabled {
+    color: $neutral-300;
+  }
+}

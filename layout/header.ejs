@@ -1,4 +1,73 @@
-<h1 class="fs-1">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<header>
+  <nav class="navbar navbar-expand-xl">
+    <div
+      class="container justify-content-between border-lg-bottom py-lg-11 pt-2 pe-2 pb-1"
+    >
+      <%- include('./layout/logo'); %>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body align-items-center">
+          <form
+            class="d-flex search-form border rounded-pill bg-white mb-8 mb-lg-0"
+            role="search"
+          >
+            <input
+              class="form-control bg-white search-form__input"
+              type="search"
+              placeholder="搜尋文章"
+              aria-label="搜尋文章"
+            />
+            <button class="btn search-form__btn py-0 px-4" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <ul
+            class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 row-gap-8 column-gap-lg-7"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >所有文章</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">訂閱方案</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">關於我們</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-secondary-200 w-100 w-lg-auto"
+                role="button"
+                href="#"
+                >登入 / 註冊</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
