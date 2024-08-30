@@ -52,3 +52,25 @@
     letter-spacing: 0.05em;
   }
 }
+
+.list-item-lh-1 {
+  li {
+    display: flex;
+    line-height: 30px;
+  }
+}
+
+// delete line
+.del-line {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.4em;
+    height: 1px;
+
+    background-color: $neutral-300;
+  }
+}

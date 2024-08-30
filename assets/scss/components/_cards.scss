@@ -89,3 +89,37 @@
     );
   }
 }
+
+.subscribe-card {
+  border-color: $primary-300;
+
+  &__duration {
+    color: $neutral-300;
+  }
+
+  &.active {
+    border-color: $accent-200;
+
+    .subscribe-card__title {
+      color: $primary-400;
+    }
+
+    .subscribe-card__price {
+      color: $accent-200;
+    }
+
+    .subscribe-card__list {
+      color: $neutral-500 !important;
+    }
+
+    .subscribe-card__button {
+      background: $accent-200;
+      color: $white;
+
+      &:hover,
+      &:active {
+        background-color: $accent-300;
+      }
+    }
+  }
+}
