@@ -21,3 +21,9 @@
   content: "．";
 }
 
+.small-dot-list-style {
+  padding-left: 1rem;
+  li::marker {
+    content: "．";
+  }
+}

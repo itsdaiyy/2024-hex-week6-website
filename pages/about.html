@@ -1,1 +1,35 @@
-    
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <%- include('./layout/head'); %>
+
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); %>
+
+    <!-- banner -->
+    <%- include('./layout/about-banner'); %>
+
+    <main>
+      <!-- 頁面資訊 -->
+      <header class="container">
+        <nav aria-label="breadcrumb" class="mb-lg-7">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">關於我們</li>
+          </ol>
+        </nav>
+        <h2 class="h4 fs-lg-1">關於我們</h2>
+      </header>
+      <!-- 品牌價值介紹 -->
+      <%- include('./layout/about-intro'); %>
+      <!-- 大事紀 -->
+      <%- include('./layout/about-history'); %>
+      <!-- 品牌願景 -->
+      <%- include('./layout/about-vision'); %>
+    </main>
+
+    <!-- footer -->
+    <%- include('./layout/footer'); %>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
