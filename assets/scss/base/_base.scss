@@ -29,10 +29,6 @@ h6 {
   letter-spacing: 0.1em;
 }
 
-p {
-  // letter-spacing: 0.05em;
-}
-
 input::placeholder {
   letter-spacing: 0.05em;
 }
@@ -41,6 +37,14 @@ ol,
 ul,
 dl {
   margin-bottom: 0;
+}
+
+svg.bi {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentcolor;
 }
 
 // fonts
@@ -53,30 +57,4 @@ dl {
 .newsreader {
   font-family: "Newsreader", serif;
   font-style: normal;
-}
-
-@include media-breakpoint-up(sm) {
-  .border-lg-bottom {
-    border-bottom: 1px solid $neutral-300;
-  }
-}
-
-svg.bi {
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  vertical-align: -0.125em;
-  fill: currentcolor;
-}
-
-.line {
-  display: inline-block;
-  flex-grow: 1;
-  height: 1px;
-  background-color: $neutral-200;
-}
-
-.debug,
-.debug * {
-  outline: 1px solid lightseagreen !important;
 }

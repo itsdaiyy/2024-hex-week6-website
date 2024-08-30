@@ -1,3 +1,4 @@
+// 熱門主題卡片
 .theme-card {
   border-radius: 20px 0 20px 0;
   overflow: hidden;
@@ -16,19 +17,7 @@
   }
 }
 
-.hover-card-img-opacity {
-  img {
-    opacity: 1;
-    transition: opacity 300ms;
-  }
-
-  &:hover img {
-    opacity: 0.7;
-  }
-}
-
 // 生活提案卡片
-
 .style-project-card {
   aspect-ratio: 1.29661 / 1;
   border-top-left-radius: 4px;
@@ -90,6 +79,7 @@
   }
 }
 
+// 訂閱方案卡片
 .subscribe-card {
   border-color: $primary-300;
 
@@ -97,6 +87,7 @@
     color: $neutral-300;
   }
 
+  // 狀態
   &.active {
     border-color: $accent-200;
 

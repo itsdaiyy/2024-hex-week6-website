@@ -1,0 +1,10 @@
+.hover-img-opacity {
+  img {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+  &:hover img {
+    opacity: 0.7;
+  }
+}

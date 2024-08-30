@@ -1,0 +1,20 @@
+.small-dot-list-style {
+  padding-left: 1rem;
+  li::marker {
+    content: "．";
+  }
+}
+
+.line-list-style {
+  li::marker {
+    content: "｜";
+  }
+}
+
+// 調整 li line height 對齊 list style img
+.list-item-lh-1 {
+  li {
+    display: flex;
+    line-height: 30px;
+  }
+}

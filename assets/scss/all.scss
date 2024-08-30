@@ -16,10 +16,6 @@
 // 自定義基本樣式
 @import "./base/base";
 
-// layout
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
-
 // components
 @import "./components/buttons";
 @import "./components/forms";
@@ -28,6 +24,9 @@
 @import "./components/banner";
 @import "./components/list-group";
 @import "./components/member-only";
+@import "./components/list-style";
+@import "./components/breadcrumb";
+@import "./components/hover";
 
 // pages
 @import "./pages/index.scss";

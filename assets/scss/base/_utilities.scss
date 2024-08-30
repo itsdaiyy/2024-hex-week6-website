@@ -14,11 +14,10 @@
     border: 1px solid $primary-300;
   }
 }
-
-// list style
-.line-list-style {
-  li::marker {
-    content: "｜";
+// border bottom
+@include media-breakpoint-up(sm) {
+  .border-lg-bottom {
+    border-bottom: 1px solid $neutral-300;
   }
 }
 
@@ -53,14 +52,7 @@
   }
 }
 
-.list-item-lh-1 {
-  li {
-    display: flex;
-    line-height: 30px;
-  }
-}
-
-// delete line
+// 裝飾用 line
 .del-line {
   position: relative;
   &::before {
@@ -73,4 +65,16 @@
 
     background-color: $neutral-300;
   }
+}
+
+.line {
+  display: inline-block;
+  flex-grow: 1;
+  height: 1px;
+  background-color: $neutral-200;
+}
+
+.debug,
+.debug * {
+  outline: 1px solid lightseagreen !important;
 }

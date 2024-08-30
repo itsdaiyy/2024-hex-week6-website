@@ -1,8 +1,10 @@
+// button 基本結構
 .btn {
   letter-spacing: 0.1em;
   line-height: 1.2;
 }
 
+// 自定義 btn-secondary-200 樣式 & 狀態
 .btn-secondary-200 {
   --bs-btn-color: var(--bs-white);
   --bs-btn-hover-color: var(--bs-white);
@@ -16,6 +18,7 @@
   }
 }
 
+// 自定義 btn-gray-100 樣式 & 狀態
 .btn-gray-100 {
   --bs-btn-color: #{$neutral-400};
   --bs-btn-hover-color: #{$neutral-500};
@@ -28,6 +31,7 @@
   }
 }
 
+// 純文字 button
 .btn-text {
   color: $accent-200;
   font-weight: 700;
