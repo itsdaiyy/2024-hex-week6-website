@@ -701,7 +701,7 @@ $font-weight-base: $font-weight-normal !default;
 
 $line-height-base: 1.5 !default;
 $line-height-sm: 1.2 !default; //1.25  !default;
-$line-height-lg: 2 !default;
+$line-height-lg: 1.875 !default; //2 !default;
 
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
@@ -900,7 +900,7 @@ $input-btn-border-width: 0 !default; //var(--#{$prefix}border-width) !default;
 // scss-docs-start btn-variables
 $btn-color: var(--#{$prefix}body-color) !default;
 $btn-padding-y: 0.75rem !default; //$input-btn-padding-y !default;
-$btn-padding-x: 1.25rem !default; //$input-btn-padding-x !default;
+$btn-padding-x: 1rem !default; //$input-btn-padding-x !default;
 $btn-font-family: $input-btn-font-family !default;
 $btn-font-size: $h6-font-size !default; //$input-btn-font-size !default;
 $btn-line-height: $input-btn-line-height !default;
@@ -1051,7 +1051,7 @@ $form-check-transition: null !default;
 
 $form-check-input-active-filter: brightness(90%) !default;
 
-$form-check-input-bg: $neutral-200 !default; //$input-bg !default;
+$form-check-input-bg: $white !default; //$input-bg !default;
 // $form-check-input-border: var(--#{$prefix}border-width) solid var(--#{$prefix}border-color) !default;
 $form-check-input-border: var(--#{$prefix}border-width) solid $neutral-200 !default;
 $form-check-input-border-radius: 0.25em !default;
