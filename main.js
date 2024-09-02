@@ -7,18 +7,15 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
 const swiperSm = new Swiper(".swiper-sm", {
-  // Optional parameters
   loop: true,
   slidesPerView: 1,
   spaceBetween: 24,
 
-  // If we need pagination
   pagination: {
     el: ".swiper-sm-pagination",
     type: "fraction",
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-sm-button-next",
     prevEl: ".swiper-sm-button-prev",
@@ -59,11 +56,13 @@ const lifeStyleSwiper = new Swiper(".life-style-swiper", {
   loop: true,
   slidesPerView: 2,
   spaceBetween: 24,
+
   breakpoints: {
     992: {
       slidesPerView: 3,
     },
   },
+
   navigation: {
     nextEl: ".life-style-button-next",
     prevEl: ".life-style-button-prev",
